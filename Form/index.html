@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Job Portal-Form</h1>
+            <p id="description">This form helps us to know about the Job.</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required="">
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" class="form-control" type="email" name="email" placeholder="xyz123@gmail.com" required="">
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input id="number" class="form-control" type="number" name="number" placeholder="Enter your age" required="" min="18" max="80">
+            </div>
+
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" class="form-control" name="role" required="">
+                    <option disabled="" selected="" value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="Part-time">Part Time Job</option>
+                    <option value="Full-time">Full Time Job</option>
+                    <option value="prefer-no">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What is your Qualification?</p>
+                <select id="dropdown" class="form-control" name="qualification" required="">
+                    <option disabled="" selected="" value="">Select your Education </option>
+                    <option value="SSC">SSC</option>
+                    <option value="HSC">HSC</option>
+                    <option value="B-tech/BE">B-Tech/BE</option>
+                    <option value="Bsc-CS/IT">Bsc-CS/IT</option>
+                    <option value="BA/BCOM">BA/BCOM</option>
+                    <option value="prefer-no">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you refer your friend for this job-portal?</p>
+                <label>
+                    <input class="radio-button" name="user-recommend" value="maybe" type="radio">
+                    Maybe 
+                </label>
+                <label>
+                    <input class="radio-button" name="user-recommend" value="definitely" type="radio">
+                    Definitely
+                </label>
+                <label>
+                    <input class="radio-button" name="user-recommend" value="not-sure" type="radio">
+                    Not sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>For what job position you want to apply?
+                    <span cla="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="frontend-development" type="checkbox">
+                    Frontend-Development
+                </label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="backend-development" type="checkbox">
+                    Backend-Development
+                </label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="mobile-development" type="checkbox">
+                    Mobile-Development
+                </label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="data-analyst" type="checkbox">
+                    Data-Analyst
+                </label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="data-engineer" type="checkbox">
+                    Data-Engineer
+                </label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="tester" type="checkbox">
+                    Tester
+                </label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="tech-blogger" type="checkbox">
+                    Tech-Blogger
+                </label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="security-tester" type="checkbox">
+                    Security-Tester
+                </label>
+            </div>    
+
+            <div class="form-group">
+                <p>Any comments or suggestion?</p>
+                <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comments..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button id="submit" class="submit-button" type="submit">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
